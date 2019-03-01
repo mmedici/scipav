@@ -20,11 +20,11 @@ Import Google Fonts
 --------------------*/
 
 /* main font for menu. */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700');
 /* font for headings, text, tags */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,500');
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400italic&subset=latin,latin-ext);
-@import url('https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400');
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200');
 
 /*--------------------
 1. General
@@ -355,7 +355,6 @@ section {
 .schedule-details p {
     width: 300px;
     font-size: 14px;
-    font-weight: 300;
     line-height: 22px;
     display: inline-block;
     text-align: left;
@@ -565,13 +564,6 @@ and (max-width : 480px) {
 
 footer p a {
     color: #B7B7B7;
-}
-
-footer p a span {
-    color: #FF9F46;
-    font-size: 10px;
-    letter-spacing: 1px;
-    font-weight: 700;
 }
 
 /*--------------------
