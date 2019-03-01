@@ -20,11 +20,11 @@ Import Google Fonts
 --------------------*/
 
 /* main font for menu. */
-@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 /* font for headings, text, tags */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400italic&subset=latin,latin-ext);
-@import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400");
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400');
 
 /*--------------------
 1. General
@@ -40,7 +40,7 @@ Import Google Fonts
 
 body {
   margin: 0px;
-    font-family: "Roboto", Sans-serif;
+    font-family: "Open Sans", Sans-serif;
     background-color: rgba(0, 0, 0, 1);
 
 }
@@ -51,9 +51,9 @@ h3,
 h4,
 h5,
 h6 {
-font-weight: 300;
+    font-weight: 300;
     letter-spacing: 0.4px;
-    font-family: "Roboto", Sans-serif;
+    font-family: "Open Sans", Sans-serif;
     color: #232323;
 }
 
