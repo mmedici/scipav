@@ -1,0 +1,690 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:                Science Pavilion (based on template by MOOZ Themes)
+Last change:            22/02/2019 [...]
+
+[Table of contents]
+
+1. General
+2. Header
+3. Navigation
+4. Sections
+5. Footer
+6. Components
+
+-------------------------------------------------------------------*/
+
+/*--------------------
+Import Google Fonts
+--------------------*/
+
+/* main font for menu. */
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
+/* font for headings, text, tags */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400italic&subset=latin,latin-ext);
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400");
+
+/*--------------------
+1. General
+--------------------*/
+
+:root {
+    --hover-color: #CC0000;
+    --light-gray-color: #f8f8f8;
+    --medium-gray-color: #A9A9B1;
+    --dark-gray-color: #222;
+    --font-color: #797979;
+}
+
+body {
+  margin: 0px;
+    font-family: "Open Sans", Sans-serif;
+    background-color: rgba(0, 0, 0, 1);
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-weight: 300;
+    letter-spacing: 0.4px;
+    font-family: "Open Sans", Sans-serif;
+    color: #232323;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+	line-height: 23px;
+    letter-spacing: 0.2px;
+    color: #797979;
+}
+
+a {
+    color: var(--font-color);
+    text-decoration: none;  
+}
+a:hover {
+    color: var(--hover-color);
+    text-decoration: none;  
+}
+a:focus, a:active, a.active {
+    color: var(--font-color);
+    text-decoration: none;  
+}
+
+/*
+::selection {
+    text-shadow: none;
+    background: #CC0000;
+}*/
+
+/*--------------------
+2. Navigation
+--------------------*/
+
+.navbar-default {
+	background-color: var(--dark-gray-color);
+	border-color: transparent
+}
+.navbar-default .navbar-brand {
+    padding: 0px;
+}
+
+.navbar-default .navbar-brand img{
+    height: 40px;
+    margin: 5px;
+}
+@media (min-width:768px) {
+    .navbar-default .navbar-brand img{
+        height: 50px;
+        margin: 0;
+    }
+}
+
+.navbar-default .navbar-collapse {
+	border-color: rgba(255,255,255,.02)
+}
+.navbar-default .navbar-toggle {
+	background-color: #111136;
+	border-color: var(--hover-color);
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff
+}
+.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus {
+	background-color: var(--hover-color)
+}
+.navbar-default .nav li a {
+	font-family: "Roboto",sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color:#fff
+}
+.navbar-default .nav li a:hover,.navbar-default .nav li a:focus {
+	color: var(--hover-color);
+	outline: 0
+}
+
+.navbar-default .navbar-nav>.active>a {
+	border-radius: 0;
+	color: #fff;
+	background-color: var(--hover-color)
+}
+.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus {
+	color: #fff;
+	background-color: #EC7221
+}
+
+@media (min-width:768px) {
+	.navbar-default	{
+		background-color: transparent;
+		padding: 20px 0;
+		-webkit-transition:padding .3s;
+		-moz-transition:padding .3s;
+		transition:padding .3s;
+		border:0
+	}
+	.navbar-default.navbar-shrink {
+		background-color: var(--dark-gray-color);
+		padding: 5px 0
+	}
+}
+
+/*--------------------
+3. Header
+--------------------*/
+
+header {
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        -moz-align-items: center;
+        -webkit-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+        -moz-justify-content: center;
+        -webkit-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        -moz-flex-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        background-image: url("../images/header.png");
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        text-align: center;
+        position: relative;
+        cursor: default;    
+
+        /*height: 10em;*/
+        min-height: 10em;
+        min-height: 75vh;
+}
+
+header:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+header .intro-text {
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+header .intro-text .intro-lead-in {
+    /*font-family: "Playfair Display",sans-serif;*/
+    /*font-style: italic;*/
+    text-transform: uppercase;
+    letter-spacing: 0.325rem;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+	header .intro-text .intro-lead-in {
+	    font-size: 25px;
+	    line-height: 25px;
+	}
+}
+
+header .intro-text .intro-heading {
+    font-family: "Pacifico", cursive;
+    text-transform: none;
+    letter-spacing: 0;
+    /*text-transform: uppercase;*/
+    font-weight: 200;
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 25px;
+    padding: 0 0.5em 22px 0.5em;
+    border-bottom: solid 2px #ffffff;
+
+}
+
+@media (min-width: 768px) {
+	header .intro-text .intro-heading {
+	    font-size: 75px;
+	    line-height: 75px;
+	}
+}
+
+/*--------------------
+4. Sections
+--------------------*/
+
+
+section {
+    padding: 50px 0;
+}
+
+
+@media (min-width: 768px) {
+    section {
+        padding: 80px 0;
+    }
+}
+
+.section-title h2 {
+    font-size: 34px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/*--------------------
+4.1. About
+--------------------*/
+
+.mz-module-about {
+    padding: 10px 20px;
+}
+@media (min-width: 768px) {
+    .mz-module-about {
+         padding: 0 40px;
+    }
+}
+
+.mz-module-about h3 {
+    font-weight: 500;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #3A3A3A;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.mz-module-about p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #969696;
+}
+
+.ot-circle {
+    font-size: 2.5rem;
+    box-shadow: inset 0 0 0 2px #666666;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    border-radius: 100%;
+    color: #666666;
+}
+
+/*--------------------
+4.2. Schedule
+--------------------*/
+
+.schedule-text h2 {
+	margin-bottom: 30px;
+}
+
+
+.with-gap{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .withgap{
+         margin-bottom: 0px;
+    }
+}
+
+.schedule-details {
+    text-align: center;
+}
+
+.schedule-details h3 {
+    font-weight: 500;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #3A3A3A;
+    letter-spacing: 2px;
+}
+
+
+.schedule-details h4 {
+    font-weight: 200;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #3A3A3A;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.schedule-details p {
+    width: 300px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    display: inline-block;
+    text-align: left;
+}
+
+/*--------------------
+4.3. Portfolio
+--------------------*/
+
+figure {
+	position: relative;
+    overflow: hidden;
+    margin: 10px;
+    height: 15em;
+    text-align: center;
+    cursor: pointer;	
+    border-radius: 4px;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+}
+
+figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.ot-portfolio-item figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+.ot-portfolio-item figure figcaption, .ot-portfolio-item figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+figure.effect-bubba {
+	background: #000;
+	margin-bottom: 30px;
+}
+
+figure.effect-bubba img {
+	opacity: 0.8;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-bubba:hover img {
+	opacity: 0.4;
+}
+
+/* lines on pictures */
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	left: 10px;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-bubba figcaption::before {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+figure.effect-bubba figcaption::after {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	-webkit-transform: scale(1,0);
+	transform: scale(1,0);
+}
+
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+/* end lines business*/
+
+figure.effect-bubba h2 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+	padding: 60px 40px 25px 40px;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,-20px,0);
+	transform: translate3d(0,-20px,0);
+}
+
+figure.effect-bubba p {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+	/*padding: 6% 2.5em;*/
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+
+
+figure.effect-bubba:hover h2,
+figure.effect-bubba:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/*--------------------
+4.4. Dark Short section (counters, quote, etc)
+--------------------*/
+
+.dark-bg {
+    /*background: #323232;*/
+    background-color: var(--dark-gray-color);
+    color: #fff;
+}
+
+.light-bg {
+	background-color: #f8f8f8;
+}
+
+.white-bg {
+    background-color: #fff;
+}
+
+.overlay-dark:before, .overlay-light:before {
+    background-color: rgba(32,32,32,0.8);
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+.overlay-dark, .overlay-light {
+    position: relative;
+    z-index: 1;
+}
+
+.short-section {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.counter-item h2 {
+    color: #fff;
+    font-size: 60px;
+    margin: 0;
+}
+
+.counter-item h6 {
+    color: #fff;
+    font-size: 19px;
+    margin: 0;	
+}
+
+/*--------------------
+5. Footer
+--------------------*/
+
+footer {
+    padding: 30px;
+}
+
+footer p {
+    color: #B7B7B7;
+    margin: 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.6px;
+}
+
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+    footer {
+        padding: 10px 50px;
+    }
+}
+
+footer p a {
+    color: #B7B7B7;
+}
+
+footer p a span {
+    color: #FF9F46;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/*--------------------
+6. Modal
+--------------------*/
+
+.modal-content {
+	border-radius: 0;	
+}
+.modal-header .close {
+	font-size: 30px;	
+}
+.modal-title {    
+	text-transform: uppercase;
+	font-size: 23px;
+}
+
+.modal-body {
+	padding: 0;
+}
+
+.modal-body p {
+	margin: 30px 20px;
+	color: #2D2D2D;	
+    margin-bottom: 10px;	
+}
+.modal-body .img-credit{
+    color: #B7B7B7;
+    font-size: 10px;
+    margin-top: 0;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.modal-body figure {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    border-radius: 4px;
+}
+@media (min-width: 768px) {
+    .modal-body figure {
+        height: 450px;
+    }
+}
+
+.modal-body figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-works {
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    margin: 25px 20px;
+}
+
+.modal-works span {
+	background-color: var(--hover-color);
+    margin-right: 15px;
+    padding: 5px 10px;
+}
+
+/* Back to top button
+---------------------------------- */
+#back-top {
+    position: fixed;
+    z-index: 1000;
+    bottom: 40px;
+    right: 40px;
+}
+#back-top a {
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    font: 11px/100% Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: var(--medium-gray-color);
+    /* background color transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+#back-top a:hover {
+    background: var(--hover-color);
+}
+/* arrow icon (span tag) */
+#back-top i {
+    margin-top: 15px;
+    font-size: 28px;
+}
+
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+    #back-top {
+        bottom: 30px;
+        right: 20px;
+    }
+    #back-top a {
+        width: 40px;
+        height: 40px;
+    }
+    #back-top i {
+        margin-top: 10px;
+        font-size: 20px;
+}
+}

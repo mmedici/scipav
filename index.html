@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="images/favicon.png">
+		<title>Science Pavilion - "Awesome experience!"</title>
+		<!-- FontAwesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+		<!-- Custom styles for this template -->
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body id="page-top">
+		<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header page-scroll">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand page-scroll" href="#page-top"><img src="images/testlogo.png" alt="Science Pavilion logo"></a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="hidden">
+							<a href="#page-top"></a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#about">About</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#schedule">Schedule</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#activities">Activities</a>
+						</li>			
+<!--
+ 						<li>
+							<a class="page-scroll" href="#mission">Mission</a>
+						</li>
+ -->
+ 					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+
+
+		<!-- Header -->
+		<header>
+			<div class="container">
+				<div class="slider-container">
+					<div class="intro-text">
+						<div class="intro-heading">Science Pavilion</div>
+						<div class="intro-lead-in">Intelligent fun and awesome curiosities</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- About -->
+		<section id="about" class="light-bg">
+			<div class="container">
+				<div class="row">
+					<!-- about module -->
+					<div class="col-md-4 text-center">
+						<div class="mz-module-about">
+							<span class="fas fa-question ot-circle"></span>
+							<h3>Questions are awesome</h3>
+							<p>The world is a complicated place. We can lock ourselves in and ignore everything around us, or we can <strong>wonder</strong>, ask <strong>questions</strong> and <strong>explore</strong>...</p>
+						</div>
+					</div>
+					<!-- end about module -->
+					<!-- about module -->
+					<div class="col-md-4 text-center">
+						<div class="mz-module-about">
+							<span class="fas fa-calendar ot-circle"></span>
+							<h3>Time and Space</h3>
+							<p><strong>Science Pavilion</strong> will be found near FLOKKR at <strong>Roskilde Festival 2019</strong>, with shows and workshops for three days (29/6-1/7). See you around the tent!</p>
+						</div>
+					</div>
+					<!-- end about module -->					
+					<!-- about module -->
+					<div class="col-md-4 text-center">
+						<div class="mz-module-about">
+							<span class="fas fa-flask ot-circle"></span>
+							<h3>Science for everyone</h3>
+							<p>We love doing research, but science is not an exclusive club, our mission is to <strong>spark curiosity</strong> and offer everybody the opportunity to be amazed and <strong>enjoy science</strong>!</p>
+						</div>
+					</div>
+					<!-- end about module -->
+				</div>
+			</div>
+			<!-- /.container -->
+		</section>
+
+		<!-- Schedule -->
+		<section id="schedule" class="white-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="schedule-text">
+							<h2>SCHEDULE</h2>
+							<p>Various shows and workshops will be hosted in the <strong>Science Pavilion</strong> in the warm-up days of Roskilde Festival. In addition we will be touring the camping site with our Science Show on Wheels. See you around for more fascination, brainpower and explosions!</p>
+							<br/>
+							<div class="mz-module-about text-center">
+								<span class="fas fa-calendar ot-circle"></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="schedule-details with-gap">
+							<h3>Shows and Debates at FLOKKR</h3>
+							<h4>- Only once -</h4>
+							<div class="centerblock">
+								<!-- Talk schedule from JS-->
+								<p id=schedule-list-talks></p>
+							</div>	
+						</div>
+						<div class="schedule-details">
+							<h3>Workshops in Science Pavilion</h3>
+							<h4>- Possible every day -</h4>
+							<div class="centerblock">
+								<!-- Workshop schedule from JS-->
+								<p id=schedule-list-workshops></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Activities -->
+		<section id="activities" class="light-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<div class="section-title">
+							<h2>Activities</h2>
+						</div>
+					</div>
+				</div>
+				<!-- List of activities from JS-->
+				<div id="activity-list" class="row"></div>
+			</div><!-- end container -->
+		</section>
+
+<!-- 
+		<section id="mission" class="white-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<div class="section-title">
+							<h2>Mission</h2>
+						</div>
+						<p>By bringing fascination and amazement to everybody we wish to broaden the horison for people interested in seeing things and being curios.</p>
+						<p>More text</p>
+					</div>
+				</div>
+			</div>
+		</section>
+ -->		
+
+
+			<p id="back-top">
+				<a href="#top"><i class="fa fa-angle-up"></i></a>
+			</p>
+		<footer class="dark-bg">
+			<div class="container text-center">
+				<p>&copy; 2019 Science Pavilion. Design template by MOOZThemes.com</p>
+			</div>
+		</footer>
+
+
+		<!-- Modal popup window from JS-->
+		<div id="modals-here"></div>
+
+
+		
+
+		<!-- Bootstrap core JavaScript
+			================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+ 		<!-- <script src="js/schedule_info.json"></script> -->
+ 		<script src="js/theme-scripts.js"></script>
+
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="js/ie10-viewport-bug-workaround.js"></script>
+	</body>
+</html>
