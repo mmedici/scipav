@@ -79,8 +79,8 @@ var json = {"items": [
     "modalname" : "Modal_CloudChamber",
     "modaltags" : ["Workshop","Physics","Learn","See"],
     "modaldesc" : "By studying the smallest building blocks of matter we can learn everything about the universe and ourselves. In this workshop we build a cloud chamber that allows us to see and study the elementary particles that fly through us all the time (mainly from outer space), without us knowing.",
-    "imageadress" : "images/annotatedCloudChamber.png",
-    "imgcredit" : "<a href='https://en.wikipedia.org/wiki/Cloud_chamber#mediaviewer/File:Nuclear_particle_in_a_diffusion_cloud_chamber.png'>Cloudylabs</a>"
+    "imageadress" : "images/cloudylabs102.jpg",
+    "imgcredit" : "<a href='http://www.cloudylabs.fr/wp/experiences/'>Cloudylabs</a>"
  },
  {
     "title": "Make a solar charger",
