@@ -151,7 +151,7 @@ var json = {"items": [
     "modalname" : "Modal_ScienceWheels",
     "modaltags" : ["Show","Physics","Experiment","#Explosion"],
     "modaldesc" : "Miss a show? Miss science? Shed no more tears, Science on Wheels is heading to an Agora near you and your tents. We offer the finest in safe exploisions, curious demonstrations and illustrative tests. Come by for a show and be invited in to a world of fun, where you can test your understanding of everything around us! (don't worry - we will bring a blackboard!)",
-    "imageadress" : "images/MariusLegestue.png",
+    "imageadress" : "images/Temadag5cut.png",
     "imgcredit" : "Niels Bohr Institute"
  },
 ]};
