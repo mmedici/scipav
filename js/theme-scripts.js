@@ -154,6 +154,30 @@ var json = {"items": [
     "imageadress" : "images/Temadag5cut.jpg",
     "imgcredit" : "Niels Bohr Institute"
  },
+ {
+    "title": "Beer Bongs and Bosons",
+    "subtitle": "Lounge",
+    "type": "Workshop",
+    "day": "Everyday",
+    "time": "17:30",
+    "modalname" : "Modal_Lounge",
+    "modaltags" : ["Lounge","Science","Stories","#MagicOfAlcohol"],
+    "modaldesc" : "Join us in the afternoon in the Science Pavilion in the Beer Bongs and Bosons lounge where the first round is on us. We’ll be asking you questions like ‘why is the foam on a brown ale  white?’ ‘why is a Gin&Tonic luminescent under UV light?’. Right or wrong answer, we’ll tell you stories and reveal the magic of alcohol.",
+    "imageadress" : "images/pbsbeerscience.jpg",
+    "imgcredit" : "PBS"
+ },
+ {
+    "title": "Accelerator in the Sky",
+    "subtitle": "Art installation at FLOKKR",
+    "type": "Other",
+    "day": "Everyday",
+    "time": "All day",
+    "modalname" : "Modal_AITS",
+    "modaltags" : ["Art","Science","#DidYouSee"],
+    "modaldesc" : "Have you seen a particle physics accelerator? Do you understand quantum mechanics? Do not worry, the Accelerator in the Sky is build to inspire, and if you want to learn more we are right around the corner at the Science Pavilion ready to geek out over the details, the stories, and the fundamental questions!",
+    "imageadress" : "images/aits_sketch.jpg",
+    "imgcredit" : "Phil Fox"
+ },
 ]};
 
 
