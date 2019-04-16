@@ -175,7 +175,7 @@ var json = {"items": [
     "modalname" : "Modal_AITS",
     "modaltags" : ["Art","Science","#DidYouSee"],
     "modaldesc" : "Have you seen a particle physics accelerator? Do you understand quantum mechanics? Do not worry, the Accelerator in the Sky is build to inspire, and if you want to learn more we are right around the corner at the Science Pavilion ready to geek out over the details, the stories, and the fundamental questions!",
-    "imageadress" : "images/aits_sketch.jpg",
+    "imageadress" : "images/aits_sketch_lessz.jpg",
     "imgcredit" : "Phil Fox"
  },
 ]};

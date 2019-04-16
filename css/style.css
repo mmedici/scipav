@@ -408,10 +408,17 @@ figure.effect-bubba {
 	margin-bottom: 30px;
 }
 
+figure.effect-bubba:hover {
+    background: #990000;
+}
+
+
 figure.effect-bubba img {
 	opacity: 0.8;
 	-webkit-transition: opacity 0.35s;
 	transition: opacity 0.35s;
+    -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(60%);
 }
 
 figure.effect-bubba:hover img {
