@@ -134,7 +134,7 @@ var json = {"items": [
     "title": "Theremin and Science",
     "subtitle": "Talk at FLOKKR",
     "type": "Show",
-    "day": "Sunday 15:30",
+    "day": "Sunday 17:30",
     "time": " ",
     "modalname" : "Modal_ThereminTalk",
     "modaltags" : ["Performance","Music","Science","#WOW"],
