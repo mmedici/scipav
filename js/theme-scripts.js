@@ -119,14 +119,14 @@ var json = {"items": [
     "imgcredit" : "<a href='https://unsplash.com/photos/4m7gmLNr3M0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>David Rangel</a>"
  },
   {
-    "title": "Energy: Nuclear or Wind?",
+    "title": "Green energy of the future",
     "subtitle": "Debate at FLOKKR",
     "type": "Show",
     "day": "Tuesday",
     "time": "16:30",
     "modalname" : "Modal_EnergyDebate",
     "modaltags" : ["Debate","Energy","Climate","#WindPower","#NewNuclear"],
-    "modaldesc" : "Moderated by [moderator], proponents from wind energy, biomass and modern nuclear power by throium, are discussing the future of energy production. The climate is changing due to human emssion of CO2, how do we lower our carbon footprint while still keeping the standards of living that we are enjoying today. Join us when we open the debate with modern visions right here at Roskilde Festival 2019!",
+    "modaldesc" : "Moderated by Søren Bjørn-Hansen (Danish Radio), the debate will focus on the UN Sustainable Development Goals, with the theme of: Future Energy - how do we get cheap and green energy? Participants are: Brian Vad Mathiesen (wind enthusiast), Sara Concito (the green think tank Concito), and Ask Løvschall-Jensen (thorium power enthusiast). The climate is changing due to human emssion of CO2, how do we lower our carbon footprint while still keeping the standards of living that we are enjoying today. Join us when we open the debate with modern visions right here at Roskilde Festival 2019!",
     "imageadress" : "images/windnuclear.jpg",
     "imgcredit" : "Christopher Furlong/Getty Images"
  },
@@ -156,7 +156,7 @@ var json = {"items": [
  },
  {
     "title": "Beer Bongs and Bosons",
-    "subtitle": "Lounge",
+    "subtitle": "Science Lounge",
     "type": "Workshop",
     "day": "Everyday",
     "time": "17:00",
