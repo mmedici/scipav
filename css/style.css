@@ -550,12 +550,15 @@ X. Sponsors
 
 img.sponsor {
     height: 75px;
+    padding: 10px;
 }
 img.sponsorL {
     height: 105px;
+    padding: 10px;
 }
 img.sponsorS {
     height: 20px;
+    padding: 10px;
 }
 
 @media (min-width: 570px) {
