@@ -545,6 +545,31 @@ figure.effect-bubba:hover p {
 }
 
 /*--------------------
+X. Sponsors
+--------------------*/
+
+@media (min-width: 500px) {
+    .sponsor {
+        height: 150px;
+    }
+    .sponsorL {
+        height: 210px;
+    }
+    .sponsorS {
+        height: 40px;
+    }
+}
+.sponsor {
+    height: 75px;
+}
+.sponsorL {
+    height: 105px;
+}
+.sponsorS {
+    height: 20px;
+}
+
+/*--------------------
 5. Footer
 --------------------*/
 
